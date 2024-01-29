@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "slideshow_eeyHkW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_Ktj3dN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLIDER1.webp",
+            "heading": "Apparel Crafted to Match Your Rhythm of Life",
+            "heading_size": "h0",
+            "subheading": "Unearth the beauty of the ordinary and elevate your daily routine.",
+            "button_label": "SHOP ALL",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_g7WPJy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLIDER2.webp",
+            "heading": "Celebrate Individuality with Unique Outfits",
+            "heading_size": "h1",
+            "subheading": "Make a statement and find your edge with our sport and casual wear.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Ktj3dN",
+        "slide_g7WPJy"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_eeyHkW",
+    "featured_collection"
+  ]
+}

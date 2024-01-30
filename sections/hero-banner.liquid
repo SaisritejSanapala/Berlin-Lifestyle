@@ -1,0 +1,136 @@
+{% comment %}
+1.Start with schema,
+2.HTML,
+3.CSS,
+4.Js
+{% endcomment %}
+
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+
+
+
+
+<style>
+.hero-banner-details-container{
+  justify-content:  {{section.settings.vertical_alignment }};
+  align-items: {{section.settings.horizantal_alignment }};
+}
+
+.hero-banner-button{
+  background: {{section.settings.hero-banner-button-background}};
+}
+
+</style>
+
+
+
+
+
+<div class="hero-banner-container">
+        {% render 'hero-banner-responsive-image', desktopImage:section.settings.desktop_image, mobileImage:section.settings.mobile_image , width:100% %}
+
+    <div class="hero-banner-details-container">
+      <div class="hero-banner-details">
+          <h1>{{section.settings.hero-banner-title}}</h1>
+          <p>{{section.settings.hero-banner-description}}</p>
+        
+          <a class="button hero-banner-button" href={{ section.settings.hero-banner-button-link }}>watch</a>
+      </div>
+    </div>
+
+  
+</div>
+  
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "tag": "section",
+
+  "settings": [
+        {
+           "type": "image_picker",
+           "id": "desktop_image",
+           "label": "Desktop image"
+        },
+        {
+           "type": "image_picker",
+           "id": "mobile_image",
+           "label": "Mobile image"
+        },
+        {
+           "type": "richtext",
+           "id": "hero-banner-title",
+           "label": "Title"
+        },
+        {
+           "type": "richtext",
+           "id": "hero-banner-description",
+           "label": "Description"
+        },
+        {
+           "type": "url",
+           "id": "hero-banner-button-link",
+           "label": "Button link"
+            },
+            {
+              "type": "color_background",
+              "id": "hero-banner-button-background",
+              "label": "Button Background",
+              "default": "linear-gradient(#ffffff, #000000)"
+            },
+
+        {
+          "type": "select",
+          "id": "vertical_alignment",
+          "label": "Vertical alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "End"
+            }
+  
+           ],
+            "default": "center"
+           },
+           
+        {
+          "type": "select",
+          "id": "horizantal_alignment",
+          "label": "Horizantal alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "Right"
+            }
+  
+           ],
+            "default": "center"
+           }
+    ],
+
+  
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+
+}
+{% endschema %}

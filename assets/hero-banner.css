@@ -1,0 +1,28 @@
+.hero-banner-container {
+    position: relative;
+
+}
+
+
+.hero-banner-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.hero-banner-details h1,
+p {
+    color: #FFFFFF;
+}
+
+.hero-banner-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
